@@ -1,0 +1,1218 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: #fff; 
+    color: #fff;
+    overflow-x: hidden;
+}
+
+
+html{
+    width: 100%;
+    height: 100%;
+     margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+/*============== Heder section starts ================ */
+.header{
+    height: 8vh;
+    background-color: #17497a;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 16px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.ph-no{
+    width:130px;
+    height: 40px;
+}
+
+.email{
+    width: 230px;
+    height: 40px;
+}
+
+.para{
+    width: 250px;
+    height: 40px;
+}
+
+.para:hover{
+    color: #dddddd;
+}
+
+.social-media{
+    position: absolute;
+    top: 8px;
+    right: 50px;
+    height: 40px;
+}
+
+.social-media i{
+    margin: 5px;
+    font-size: 25px;
+}
+
+.ph-no:hover{
+    color: rgb(241, 166, 52);
+}
+
+.email:hover{
+    color: rgb(241, 166, 52);
+}
+
+.social-media i:hover{
+    color: rgb(241, 166, 52);
+}
+
+/*============== Heder section ends and navbar starts ================ */
+.navbar{
+   height: 90px;
+   width: 100%;
+   background: #fff;
+   z-index: 15;
+   position:sticky;
+   top: 0;
+}
+
+.logo{
+   float: left;
+   padding: 10px;
+   margin-left: 20px;
+   height:90px;
+   width:200px;
+}
+
+.logo:hover{
+   opacity: 0.6;
+}
+
+.logo img{
+   height:70px;
+   width:180px; 
+}
+
+.nav-menu{
+   float: right;
+   margin-top: 30px;
+   margin-right: 35px;
+   font-family: sans-serif;
+}
+
+.nav-menu a{
+    color: #17497a;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+.nav-menu a:hover{
+    text-decoration: underline;
+    color:  #1744aa;
+}
+
+.carosoul{
+    height: 600px; 
+    font-family: sans-serif;
+    position: relative;
+    background: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.carosoul img{
+        height: 600px;
+        width: 100%;
+        animation: sliderr 1s linear;
+}
+   
+  @keyframes sliderr{
+    0%{opacity: 0.4;
+        transform:scale(0.8);
+      }
+
+    100%{opacity: 0.5;
+        transform:scale(1);
+      }
+  }
+
+.arrow-left{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+
+.arrow-right{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+
+#carImg1{
+   display: block;
+}
+
+#carImg2,#carImg3{ /*for hiding 2nd and 3rd img of carasoul and changing on right left clicks*/
+   display: none;
+}
+
+#carImg1 img,#carImg2 img,#carImg3 img{
+  opacity: 0.6;
+}
+
+.circles{
+    position: absolute;
+    top: 90%;
+    left: 45%;
+}
+
+#circle11{
+   color: #1722ff;
+}
+
+#circle11,#circle12,#circle13,#circle21,#circle22,#circle23,#circle31,#circle32,#circle33{
+  margin: 0px 8px;
+  border: 2px solid #fff;
+  border-radius: 100px;
+}
+
+.carosoul-text{
+    height: 200px;
+    width: 60%;
+    padding: 20px;
+    position: absolute;
+    top: 200px;
+    left: 10%;
+    margin-top: 20px;
+    margin-left: 10px;
+    z-index: 5;
+}
+
+.carosoul-btn{
+    width: 160px;
+    background-color:rgb(245, 150, 7);
+    color: #fff;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 0px solid #fff;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.carosoul-btn:hover{
+   background-color:#17497a;
+}
+
+
+/*Below  code is for responsive side menu for mobile and other medium devices*/
+.navmenu{
+            float: right;
+            margin-right: 0px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            height: 50px;
+            width: 40px;
+            font-size: 30px;
+            cursor: pointer;
+            display:none;
+            color: black;
+       }
+
+.sidenav{
+            float: right;
+            height:100vh;
+            width: 0;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            z-index: 12;
+            background:#175977;
+            overflow-x: hidden;
+            display:flex;
+            flex-direction: column;
+            transition: all 0.5s;
+        }
+
+  #close{
+       color: #fff;
+       font-size: 1.6rem;
+  }
+
+     #list{   
+            margin:15px 15px;
+            padding: 10px;
+         }
+
+ .sidenav a{
+        text-decoration: none;      
+        color: #fff;
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        padding-left: 5px;
+    }
+
+  .sidenav a:hover{
+        color: #f29f05;
+    }
+
+.closebtn{
+           margin-top: 25px;
+           margin-left: 5px;
+           font-size: 30px!important;
+           color: white;
+           font-weight: bolder;
+           text-decoration: none;
+}
+
+.closebtn:hover{
+   color:#ff0000!important;
+   text-shadow: 1px 1px 1px #000;
+  }
+
+/*End of mobile responsive side menu*/
+
+/* ========Navbar and carosoul section ends and Kamnar Construction section starts===== */
+
+.sectionKC{
+    position: relative;
+}
+
+.KC-header{
+    height: 90px;
+    padding:20px;
+    background-color: rgb(245, 150, 7);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.KC-header p{
+    width:65%;
+    font-size:1.8rem;
+    font-weight: 600;
+    padding:5px 20px;
+}
+
+ .KC-btn{
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    width: 150px;
+    height: 50px;
+    background-color:#fff;
+    color: #000;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 0px solid #fff;
+    border-radius: 30px;
+}
+
+.KC-btn:hover{
+    background-color:#17497a;
+    color: #fff;
+ }
+
+ .KC-content{
+    display:flex;
+    flex-direction: row;
+    padding: 40px;
+    position: relative;
+ }
+
+.KC-image img{
+    height: 400px;
+    width:35%;
+    margin-right: 30px;
+  }
+
+.KC-text{
+    color: #000;
+    height: 400px;
+    width:60%;
+    position: absolute;
+    right: 10px;
+    padding: 10px;
+}
+
+.KC-text p,h1{
+    padding-top: 20px;
+    font-family:sans-serif;
+    text-align: justify;
+}
+
+.KC-text p{
+    font-size: 1.1rem;
+}
+
+/* ========== Kamnar Construction section end and what we do section starts===== */
+
+.what-we-do{
+    height: all;
+    background-color: rgb(236, 165, 57);
+    padding: 20px; 
+    padding: 50px 20px; 
+}
+
+.what-we-do h1{
+     text-align: center;
+     padding:0px 100px;
+} 
+
+.what-we-do p{
+    text-align: center;
+    padding:0px 100px;
+    font-family: sans-serif;
+    font-size:  1.1rem;
+    margin-bottom: 50px;
+    margin-top: 10px;
+} 
+
+.eight-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    height: 340px;
+    width: 260px;
+    background-color: #27497a;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+.cardImg{
+    height: 60px;
+    width: 200px;
+}
+
+.cardImg img{
+    height: 80px;
+    width: 100px;
+    margin: 20px 30%;
+}
+
+.cardDesc{
+    height: 230px;
+    width:230px ;
+    margin-top: 50px;
+}
+
+.cardDesc h2{
+    color: rgb(250, 153, 7);
+}
+
+.cardDesc p{
+    height: 180px;
+    width:230px ;
+    margin-top: 5px;
+    padding:10px 10px;
+    text-align:center;
+    font-size: 1.05rem;
+}
+
+.card:hover{
+    box-shadow: 3px 3px 3px #fff, -1px -1px 1px #000;
+}
+
+#btn3{
+    margin: 0% 42%;
+    background-color: rgb(2, 53, 121);
+}
+
+#btn3:hover{
+    margin: 0% 42%;
+    background-color: rgb(5, 100, 168);
+}
+
+ /* ========== what we do section ends and Why Choose Us section starts===== */ 
+
+.why-choose-us{
+    padding: 20px; 
+    background-color: rgb(230, 229, 221)!important;
+    color: #000!important;
+}
+
+.why-choose-us h1{
+    margin-top: 30px;
+    text-align: center;
+    padding:0px 100px;
+} 
+
+.why-choose-us p{
+   text-align: center;
+   padding:0px 100px;
+   font-family: sans-serif;
+   margin-bottom: 40px;
+   margin-top: 10px;
+   font-size: 1.2rem;
+   font-weight:500;
+} 
+
+.wcu-content{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-content: center;
+   position: relative;
+}
+
+.our-icon{
+    height: 500px;
+    width: 48%;
+    font-family: sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    position: absolute;
+    left: 20px;
+}
+
+.icon-n-desc{
+    height: 180px;
+    width: 180px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.icon-n-desc img{
+    height: 180px;
+    width: 180px;
+}
+
+.icon-n-desc desc{
+   font-size: 1rem;
+}
+
+.points{
+  height: auto;
+  display: none;
+  margin-left: 45%;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align:left;
+  font-family: sans-serif;
+}
+
+.points h3{
+  margin: 10px 0px;
+}
+
+.form{
+    height: 550px;
+    margin-left: 50%;
+    font-family: sans-serif;
+}
+
+.form-holder{
+    width: 100%;
+    padding: 8px;
+    margin-top: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+::placeholder{
+    color: #000;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+}
+
+#message{
+    height: 200px;
+    font-size: 1.1rem;
+}
+
+#btn4{
+    width: 90px;
+    padding: 6px;
+    background-color: rgb(245, 132, 2);
+}
+
+#btn4:hover{
+    background-color: #17497a;
+}
+
+/* <!-- ========== Why Choose Us section end and what people are saying section starts=====--> */
+
+.review{
+    background-color:  rgb(236, 165, 57);
+    font-family: 'Rubik', sans-serif;
+}
+
+.review h1{
+    color: #000;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.review i{
+    color: #fff;
+    margin-left: 45%;
+    margin-top: 10px;
+}
+
+.review p{
+    text-align: center;
+    margin: 20px 15%;
+    font-size: 1.2rem;
+}
+
+.review-content{
+    height: 300px;
+    width: 80%;
+    margin: 0px 10%;
+    position: relative;
+}
+
+.adjust{
+    height: 100px;
+    width: 90%;
+    position: relative;
+}
+
+.review-img{
+    width: 80px;
+    position: absolute;
+    top: 5px;
+    left:35%;
+}
+
+.review-img img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
+}
+
+.review-info{
+    width: 300px;
+    position: absolute;
+    top: 15px;
+    left:45%;
+}
+
+/* <!-- ==========what people are saying section ends and Our Latest Projects starts=====--> */
+
+.latest-projects{
+    color: #000;
+    font-family: sans-serif;
+}
+
+.latest-projects h1{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.latest-projects p{
+    text-align: center;
+    padding:0px 20px;
+    font-size: 1.2rem;
+}
+
+.projects-img{
+    padding: 10px;
+    margin:10px 0px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project{
+    height: 210px;
+    width: 300px;
+    margin:30px 0px;
+}
+
+.project img{
+    height: 180px;
+    width: 300px;
+}
+
+.project desc{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* <!-- ==========Our Latest Projects ends and footer section starts=====--> */
+
+.footer{
+    width: 100%;
+    background-color:  #0a0a09;
+    padding: 20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Overpass', sans-serif;
+}
+
+#content1{
+    width: 280px;
+    height: 300px;
+    position: relative;
+}
+
+#content2{
+    width: 20%;
+}
+
+#content3{
+    width: 18%;
+}
+
+#content4{
+    width: 26%;
+}
+
+.time{
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    width: 95%;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-left: 10px;
+}
+
+.time i{
+    margin:5px 0px;
+    color:rgb(245, 150, 7);
+}
+
+.footer-social-media{
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    width: 90%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footer-social-media i{
+    padding: 5px;
+}
+
+.footer-social-media i:hover{
+    color: rgb(245, 150, 7);
+}
+
+.footer-icon{
+    width:100%;
+}
+
+.footer-icon #span1{
+   position: absolute;
+   top: 5px;
+   left: 35px;
+}
+
+.mail-phone{
+   margin-left: 5px;
+}
+
+.footer-icon i{
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+.footer-services{
+    margin-left: 30px;
+}
+
+.footer-services h3{
+    padding: 6px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.useful-links a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+.useful-links a:hover{
+    color:rgb(245, 150, 7) ;
+}
+
+.contact{
+}
+
+.main-footer{
+    height: 60px;
+    background-color:#15191b;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+/* =============================================================================
+================Media queries started for responsiveness===================== */
+
+  @media only screen and (max-width:1080px){
+     /*header carosoul*/
+    .carosoul-text{
+           width: 80%;
+     }
+
+
+     .carosoul{
+         height: 500px; 
+     }
+
+      .carosoul img{
+              height: 500px;
+      }
+      
+      .carosoul-text{
+          padding: 0px;
+          top: 180px;
+      }
+
+    /*why choose us section*/
+     .icon-n-desc{
+         height: 150px;
+         width: 150px;
+       }     
+
+      .icon-n-desc img{
+         height: 150px;
+         width: 150px;
+       }  
+
+       .icon-n-desc desc{
+         font-size: 0.8rem;
+       }
+
+       /*what people  are saying*/
+    .review p{
+       margin: 20px 0%;
+    }  
+  }
+ 
+  @media only screen and (max-width:862px){
+   /* why choose us section*/
+  .wcu-content{
+    flex-direction: column;
+   }
+  
+   .our-icon{
+    position:relative;
+    width: 80%;
+    margin-left: 50%;
+     }
+     
+    .icon-n-desc{  
+      display: inline-table; 
+    }
+
+    .form{
+    width: 90%;
+    margin-right: 50%;
+    }
+
+    /*what people  are saying*/
+    .review-img{
+    left:25%;
+    }
+
+    .review-info{
+    left:40%;
+   }
+ } 
+
+  @media only screen and (max-width:836px){
+  /*  header section*/
+  .header{
+    height: 14vh;
+  }
+
+  .email{
+    margin-left: 20px;
+  }
+
+  .para{
+    position: absolute;
+    top: 55px;
+    left: 100px;
+  }
+
+/*   what do we do section*/
+   .what-we-do p{
+    padding:0px 10px;
+   } 
+
+    .what-we-do h1{
+    padding:0px 10px;
+   } 
+
+/*  Kamnar Construction*/
+    .KC-header p{
+    font-size:1.5rem;
+   }
+
+   .KC-content{
+      display: inline;
+     }
+
+   .KC-image img{
+    position: relative;
+    align-items: center;
+    height: 350px;
+    margin: 4%;
+    width:90%;
+   }
+
+   .KC-text{
+    position: relative;
+    height: 400px;
+    width: 92%;
+    margin:0px 4%;
+   }
+
+   /*Footer section*/
+    #content2{
+        width: 50%;
+    }
+    
+    #content3{
+        margin-top: 40px;
+        width:25%;
+    }
+    
+    #content4{
+        margin-top: 40px;
+        width: 65%;
+    }
+
+    /*what people  are saying*/
+    .review-img{
+    left:25%;
+    }
+
+    .review-info{
+    left:42%;
+   }
+  
+  /*why choose us section*/
+   .why-choose-us{
+    padding: 20px; 
+    }
+
+   .why-choose-us h1{
+     padding:0px 20px;
+    } 
+
+   .why-choose-us p{
+     padding:0px 20px;
+   } 
+}
+
+ @media only screen and (max-width:780px){
+  /*navbar section*/
+  .nav-menu a{
+    display:none;
+   }
+
+   .navmenu{
+    display: block;
+   }
+ }
+
+ @media only screen and (max-width:727px){
+    /*header carosoul*/
+     .carosoul{
+         height: 450px; 
+     }
+
+      .carosoul img{
+              height: 450px;
+      }
+
+      .carosoul-text{
+          top: 150px;
+      }
+
+    /*Changing buttons size*/
+    .carosoul-btn{
+      width: 130px;
+      padding: 12px;
+      font-size: 1rem;
+    }
+
+    .KC-btn{
+    right: 10px;
+    width: 145px;
+    height: 45px;
+    font-size: 1rem;
+   }
+    
+    .KC-header p{
+    width:75%;
+    }
+
+    /*  Kamnar Construction*/
+    .KC-header p{
+    font-size:1.4rem;
+   }
+
+    /*what people  are saying*/
+    .review-info{
+    left:45%;
+   }
+
+    /*Kamnar Construction*/
+     #btn2,#btn3{
+        width: auto;
+     }
+      
+     .KC-text{
+       height: auto;
+     }
+  
+    /*what we do*/
+    #btn3{
+       width:150px;
+      }
+
+      /*Footer section*/
+    #content2{
+        margin-top: 20px;
+        width: 60%;
+    }
+    
+    #content3{
+        margin-top: 20px;
+        width:40%;
+    }
+    
+    #content4{
+        width: 95%;
+    }
+}
+ 
+  @media only screen and (max-width:616px){
+
+    /*header carosoul*/
+     .carosoul{
+         height: 400px; 
+     }
+
+      .carosoul img{
+              height: 400px;
+      }
+
+      .carosoul-text{
+          top: 120px;
+      }
+
+  /*what we do*/
+    #btn3{
+       margin: 0px 35%;
+      } 
+  }
+
+ @media only screen and (max-width:580px){
+  /*  header section*/
+  .ph-no{
+     position: absolute;
+     left: 20px;
+  }
+   
+   .email{
+    position: absolute; 
+    right: 10px;
+    padding-left: 20px;
+  }
+
+  .para{
+    top: 45px;
+    left: 20px;
+  }
+
+  .social-media{
+    top: 35px;
+    right: 40px;
+  }
+
+  /*what people  are saying*/
+    .review-info{
+    left:48%;
+   }
+
+/*   why choose us*/
+   .our-icon{
+    display: none;
+   }
+
+   .points{
+    display:block;
+   }
+}
+
+ @media only screen and (max-width:600px){
+     html{
+         font-size: 14px;
+     }
+ }
+
+ @media only screen and (max-width:500px){
+   .navmenu{
+      width: 40px;
+   }
+
+  /*header carosoul*/
+     .carosoul{
+         height: 370px; 
+     }
+
+      .carosoul img{
+              height: 370px;
+      }
+
+      .carosoul-text{
+          top: 100px;
+      }
+
+      .circles{
+        left: 40%;
+      }
+
+  /*  Kamnar Construction*/   
+    .KC-header{
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+
+    .KC-header p{
+        width:100%;
+        font-size:1.5rem;
+        font-weight: 600;
+        padding:0px 0px;
+    }
+
+      .KC-btn{
+         position:relative;
+         margin-bottom: 20px;
+    }
+    
+    /*what people  are saying*/
+     .review{
+      height: 420px;
+     }
+
+     .review-info{
+       left:50%;
+      }
+
+    .review-img{
+       left:20%;
+     }
+ }
+
+ @media only screen and (max-width:416px){
+  .navmenu{
+     width: 20px;
+  }
+
+  /*  header section*/
+  .ph-no{
+     left: 20px;
+  }
+   
+   .email{
+    top: 55px;
+    left: 0px;
+    padding-left: 0px;
+  }
+
+  .para{
+    display: none;
+  }
+
+  .social-media{
+    top: 10px;
+    right: 20px;
+  }
+
+  /*what people  are saying*/
+     .review{
+      height: 450px;
+     }
+
+     .review-info{
+       left:100px;
+      }
+
+    .review-img{
+       left:10px;
+     }
+  }
+
+
+ @media only screen and (max-width:390px){
+    /*header carosoul*/
+     .carosoul{
+         height: 350px; 
+     }
+
+      .carosoul img{
+              height: 350px;
+      }
+      
+      .circles{
+        left: 35%;
+      }
+    /*what people  are saying*/
+     .review{
+      height: 470px;
+     }
+
+    .review-img{
+       left:0px;
+     }
+
+      .review-info{
+       left:90px;
+      }
+ }
+
+
+
+
