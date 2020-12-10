@@ -37,6 +37,7 @@ html{
     padding-top: 16px;
     padding-left: 40px;
     position: relative;
+    margin-bottom: 0px;
 }
 
 .ph-no{
@@ -89,7 +90,7 @@ html{
    background: #fff;
    z-index: 15;
    position:sticky;
-   top: 0;
+   top: -4px;
 }
 
 .logo{
