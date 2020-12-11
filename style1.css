@@ -492,6 +492,7 @@ html{
 } 
 
 .wcu-content{
+   height:560px;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
@@ -549,7 +550,8 @@ html{
 
 .form{
     width: 50%;
-    margin-left: 50%;
+    position: absolute;
+    right: 0px;
     font-family: sans-serif;
 }
 
@@ -845,13 +847,14 @@ html{
   @media only screen and (max-width:862px){
    /* why choose us section*/
   .wcu-content{
-    flex-direction: column;
+    height: 1100px;
    }
   
    .our-icon{
-    position:relative;
-    width: 80%;
-    margin-left: 50%;
+    position: absolute;
+    width: 70%;
+    margin: 0 10%;
+    top: 20px;
      }
      
     .icon-n-desc{  
@@ -860,7 +863,7 @@ html{
 
     .form{
     width: 100%;
-    margin-right: 50%;
+    margin-top: 550px;
     }
 
     /*what people  are saying*/
@@ -1058,6 +1061,14 @@ html{
           top: 120px;
       }
 
+     /*why choose us*/
+      .our-icon{
+         position: absolute;
+         width: 90%;
+         margin: 0 0;
+         top: 20px;
+     }
+
   /*what we do*/
     #btn3{
        margin: 0px 35%;
@@ -1093,6 +1104,10 @@ html{
    }
 
 /*   why choose us*/
+  .wcu-content{
+    height: 740px;
+   }
+
     .form{
     margin-left: 50%;
     margin-top: 200px;
@@ -1111,6 +1126,11 @@ html{
      html{
          font-size: 14px;
      }
+
+          /*why choose us*/
+      .our-icon .desc{
+          font-size: 14px!important;
+       }
  }
 
  @media only screen and (max-width:500px){
